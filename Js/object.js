@@ -23,6 +23,7 @@ let CapAmerica = {
     },
     sayHi : function(){
         console.log("Hii Bro");
+        console.log("Hii")
     }
 }
 
