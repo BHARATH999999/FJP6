@@ -14,3 +14,6 @@ let path = require("path")
 console.log(__dirname) //Prints The path of the Directory
 
 console.log(__filename) //Prints The path of the File
+
+let newPath = path.join(__dirname,"test.js")
+console.log(newPath)
