@@ -1,0 +1,1 @@
+console.log("Hello I am text file generated from fs.js")
