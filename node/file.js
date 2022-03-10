@@ -1,1 +1,1 @@
-console.log("Hello I am text file generated from fs.js")
+console.log("Content of file.js is over written by fs.js")

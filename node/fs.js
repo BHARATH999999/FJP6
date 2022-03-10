@@ -10,3 +10,6 @@ let cp = require("child_process")
 
 console.log(""+ cp.execSync("node file.js"))
 
+
+fs.writeFileSync(filepath,"console.log(\"Content of file.js is over written by fs.js\")")
+console.log(""+ cp.execSync("node file.js"))
