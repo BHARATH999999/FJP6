@@ -3,7 +3,8 @@ let fs = require("fs")
 
 let path = require("path")
 let filepath = path.join(__dirname,"file.js")
-//CRUD OPERATIONS
+
+// C-R-U-D OPERATIONS
 
 // C -->Create
 fs.writeFileSync(filepath,"console.log(\"Hello I am text file generated from fs.js\")")
