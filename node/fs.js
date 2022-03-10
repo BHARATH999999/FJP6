@@ -13,3 +13,6 @@ console.log(""+ cp.execSync("node file.js"))
 
 fs.writeFileSync(filepath,"console.log(\"Content of file.js is over written by fs.js\")")
 console.log(""+ cp.execSync("node file.js"))
+
+let content = fs.readFileSync(filepath,"utf-8")
+console.log(content)
