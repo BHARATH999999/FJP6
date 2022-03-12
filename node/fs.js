@@ -56,4 +56,4 @@ fs.copyFileSync(filepath1,filepath2);
 fs.unlinkSync(filepath1)//Deleting original file after Copying
 
 //Delete
-fs.rmdirSync("New_Folder_from_fs") // Throws Some Error --> we will read another function later
+fs.rmdirSync("New_Folder_from_fs") // Throws Some Error in some cases--> we will read another function later
