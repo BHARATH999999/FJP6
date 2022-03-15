@@ -1,1 +1,11 @@
-//copy index.html file from module1 to a new folder inside module2 having name html.
+//copy q3.html file from node_questions to a new folder inside Solutions having name q3_sol.html
+
+fs = require("fs")
+path = require("path")
+
+currentpath = path.join(__dirname,"q3.txt");
+let content = fs.readFileSync(currentpath,"utf-8")
+
+destinationpath = path.join(__dirname,"Solutions","q3_sol.txt")
+fs.writeFileSync(destinationpath,content);
+
