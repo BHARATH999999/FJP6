@@ -4,10 +4,10 @@
 let fs = require("fs");
 let path = require("path")
 
-if(!fs.existsSync("Solutions")){
-fs.mkdirSync("Solutions")}
+if(!fs.existsSync("New_folder")){
+fs.mkdirSync("New_folder")}
 
-let filepath = path.join(__dirname,"Solutions","q1_sol.txt")
+let filepath = path.join(__dirname,"New_folder","q1_sol.txt")
 
 console.log(filepath)
 fs.writeFileSync(filepath,"new file has been made")
