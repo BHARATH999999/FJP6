@@ -3,15 +3,16 @@
 fs = require("fs")
 path = require("path")
 
-fs.readdir(__dirname, 
-    { withFileTypes: true },
-    (err, files) => {
-    console.log("\nCurrent directory files:");
-    if (err)
-      console.log(err);
-    else {
-      files.forEach(file => {
-        console.log(file);
-      })
-    }
-  })
+folderPAth = path.join(__dirname,"..","New_Module_Creation")
+
+let content = fs.readdirSync(folderPAth);
+
+// console.log(content)
+
+let exeArr = [];
+
+for(let i =0 ; i<content.length;i++){
+  exeArr[i] = path.extname(content[i]);
+}
+
+console.log(exeArr)

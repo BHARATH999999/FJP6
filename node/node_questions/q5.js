@@ -3,16 +3,12 @@
 fs = require("fs")
 path = require("path")
 
-const currentPath = path.join(__dirname, "q5_move.txt");
-const destinationPath = path.join(__dirname, "New_folder", "q5_move.txt");
-
-fs.rename(currentPath, destinationPath, function (err) {
-    if (err) {
-        throw err
-    } else {
-        console.log("Successfully moved the file!");
-    }
-});
+function moveFile(folderPath,pathOfFolder,fileName){
+    let sourcePath = path.join(folderPath,fileName);
+    let destinationPath = path.join(pathOfFolder,fileName);
+    fs.copyFileSync(sourcePath,destinationPath);
+    fs.unlinkSync(sourcePath);
+}
 
 // if(!fs.existsSync("q5_move.txt")){
 //     fs.mkdirSync("q5_move.txt");
