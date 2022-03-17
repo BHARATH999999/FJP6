@@ -9,7 +9,7 @@
 // console.log(input);
 
 
-const { execFileSync } = require("child_process");
+// const { execFileSync } = require("child_process");
 let fs = require("fs");
 let path = require("path");
 
@@ -43,7 +43,7 @@ if(folderExists){
             fs.mkdirSync(pathOfFolder);
             moveFile(folderPath,pathOfFolder,files[i]);
         }
-    };
+    }
     }
 else{
     console.log("Please Enter a Valid Path...!");
